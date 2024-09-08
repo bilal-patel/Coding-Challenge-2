@@ -17,3 +17,24 @@ let testBill = 100;
 let testTip = calculateTip(testBill);
 console.log (testTip);
 
+//Task 4 - Utilize Arrays
+
+// generating tips for first data set
+let dataSetOne = [275, 40, 430];
+const tipsOne = dataSetOne.map ((element)=> calculateTip(element));
+console.log(tipsOne);
+
+// generating tips for second data set
+let dataSetTwo = [125, 555, 44];
+const tipsTwo = dataSetTwo.map ((element)=> calculateTip(element));
+console.log(tipsTwo);
+
+// generating sums 1
+const totalsOne = dataSetOne.map ((bill, index) => bill + tipsOne[index]);
+console.log (totalsOne);
+
+// generating sums 2
+const totalsTwo = dataSetTwo.map ((bill, index) => bill + tipsTwo[index]);
+console.log (totalsTwo);
+
+// completed task 4 with 5. Test Data^^
